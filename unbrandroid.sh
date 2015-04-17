@@ -1,5 +1,6 @@
 #!/bin/sh
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+if [ ! -z "$2" ]; then DIR="$2"; cd "$DIR"; fi
 
 branch="cm-12.0"
 if [ ! -z "$1" ]

@@ -1,5 +1,7 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+if [ ! -z "$2" ]; then DIR="$2"; fi
+
 start=`date +%s`
 device="d800"
 if [ "$1" ]

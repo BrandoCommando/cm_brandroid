@@ -1,5 +1,6 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
+if [ ! -z "$1" ]; then DIR="$1"; cd $DIR; fi
 date=`date +'%Y-%m-%d'`
 fname=`echo "changelog_$date" | sed -e "s:/::g"`
 if [ "$1" ]
